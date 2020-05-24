@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盛夏青空-天</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('../fonts/icomoon.eot?z4k1te');
+            src:  url('../fonts/icomoon.eot?z4k1te#iefix') format('embedded-opentype'),
+            url('../fonts/icomoon.ttf?z4k1te') format('truetype'),
+            url('../fonts/icomoon.woff?z4k1te') format('woff'),
+            url('../fonts/icomoon.svg?z4k1te#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="../images/bg.jpg" alt="">
+        <div class="header w-m">
+            <div style="height: 18px"></div>
+            <div class="logo1">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div class="logo2">
+                <img src="../images/logo_2.png" alt="">
+            </div>
+            <div class="audio clearfix" id="myAudio">
+                <div class="last fl" title="上一曲" onclick="lastMusic()"></div>
+                <div class="palying fl" id="playing" title="播放" onclick="pauseMusic()"></div>
+                <div class="next fl" title="下一曲" onclick="nextMusic()"></div>
+            </div>
+            <div class="h-nav clearfix">
+                <ul>
+                    <li class="fr"><a href="connect%20me.html">联系我</a></li>
+                    <li class="fr"><a href="daily.html">我的日志</a></li>
+                    <li class="fr"><a href="about%20me.html">个人简介</a></li>
+                    <li class="fr"><a href="index.html">首页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content w-m clearfix">
+            <div class="c-l fl">
+                <h2>留言栏</h2>
+                <marquee scrollamount="2" scrolldelay="40" class="article"
+                         onmouseout="this.start()" onmouseover="this.stop()" direction="up">
+                    <p>不知从何时起</p>
+                    <p>我已经望着天空了</p>
+                    <p>望着这片一直泛着悲伤色彩的天空</p>
+                    <p>望着那无边无垠的蔚蓝</p>
+                    <p>想着回到了天空中的那个少女</p>
+                    <p>现在依然孤零零的那个少女</p>
+                    <p>所以我将继续踏上寻找她的旅途</p>
+                    <p>然后终有一天</p>
+                    <p>我将把她带回到这里</p>
+                    <p>为了迎接新的开始...</p>
+                </marquee>
+                <p class="last_date">——2020-5-4</p>
+                <div id="cldFrame">
+                    <div id="cldBody">
+                        <table>
+                            <thead>
+                            <tr>
+                                <td colspan="7">
+                                    <div id="top">
+                                        <span id="topDate"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="week">
+                                <td>日</td>
+                                <td>一</td>
+                                <td>二</td>
+                                <td>三</td>
+                                <td>四</td>
+                                <td>五</td>
+                                <td>六</td>
+                            </tr>
+                            </thead>
+                            <tbody id="tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="author clearfix">
+                    <h2>有关作者</h2>
+                    <div class="fl">
+                        <img src="../images/avatar.jpg" alt="">
+                    </div>
+                    <div class="self fl">
+                        <h4>黄天兵</h4>
+                        <p>一位大二学生，就读于西南石油大学，正在学习有关计算机的知识，希望成为一个IT达人</p>
+                    </div>
+                </div>
+            </div>
+            <div class="c-r demo fr">
+                <div>
+                    <h2>仰望天空</h2>
+                    <hr>
+                    <p>
+                        喜欢像冰晶一样湛蓝的天空，在时间里幻化。细碎的风吹动西天的云彩，沉淀着彩虹似的梦，谱一曲遥远的歌，萦绕着我的心房。远处村庄的炊烟氤氲了夕阳中的红霞，邂逅了光阴的荏苒。
+                    </p>
+                    <img src="../images/li-02.jpg" alt="">
+                    <p>
+                        逐浪涛天，没有圣地亚哥与大马林鱼，也没有凶狠的大白鲨，只有风过时的朵朵浪花。明澈的海水映着天的蓝，隐藏海底千年的沉船和照亮黑夜的珍珠。蓝天枕着白云，卧听松林尖的涛声，作着晴天的梦。
+                    </p>
+                    <p>
+                        对蓝天的热爱和向往从小就有，就像与生俱来一样，总感觉蔚蓝的天空在召唤着我，邀我去天空的世界。也是从记忆的伊始我便习惯了仰望天空，总感觉那片天有神秘的事物在吸引着我，牵动我的着灵魂。
+                    </p>
+                    <p>
+                        直到长大后我才知道，那一直牵引着我的正是天空的广袤，一望无际的天宇以他的开阔和纯洁净化着我的灵魂，抚平的我的忧愁和哀伤。
+                    </p>
+                    <p>
+                        每一次仰望天空，我都感觉到我在飞翔，自在无忧地遨游，忘却所有的烦恼。喜欢那种宁静，喜欢那种无暇，更喜欢蓝天的浩瀚。
+                    </p>
+                    <p>
+                        习惯了仰望天空，发现天空每时每刻无不在变化着，你永远找不到一样的天空。风起云涌，日月交替，日出日落，天空一直是动态前行的，就像时间的运行一样，永远都不会停留在任何一时刻。如此多彩的天空又怎会让人厌倦呢？
+                    </p>
+                    <p>
+                        如果让我唱一首歌，那我会唱一首赞美天空的歌；如果让我写一首诗，那我会写一首体现天空博大的诗；如果让我选择心灵的归宿，那我会选择那一方湛蓝的天空。
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer w-m">
+            <div class="f-nav clearfix">
+                <ul>
+                    <li class="fr"><a href="connect%20me.html">联系我</a></li>
+                    <li class="fr"><a href="daily.html">我的日志</a></li>
+                    <li class="fr"><a href="about%20me.html">个人简介</a></li>
+                    <li class="fr"><a href="index.html">首页</a></li>
+                </ul>
+            </div>
+            <div class="clearfix">
+                <p class="fr">Copyright © 2020 Designed by HuangTianbing. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #ffffff;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.container > img {
+    position: fixed;
+    top: -52.0px;
+    z-index: -10;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.1);
+}
+
+.w-m {
+    width: 1052px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: orangered;
+}
+
+img {
+    vertical-align: middle;
+}
+
+li {
+    list-style-type: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header {
+    position: relative;
+}
+
+.header .audio {
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.audio > div {
+    display: inline-block;
+    margin: 0 8px;
+    font-family: "icomoon", serif;
+    font-size: 22px;
+}
+
+.header .logo1 {
+    position: relative;
+    left: 50%;
+    margin-left: -600px;
+}
+
+.header .logo2 img {
+    position: absolute;
+    right: 0;
+    top: 65px;
+    height: 50px;
+}
+
+.header .h-nav {
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 15px;
+    background-image: linear-gradient(to right, transparent, rgba(135, 206, 235, .5));
+}
+
+.header .h-nav li a {
+    padding: 12px 20px;
+}
+
+.header .h-nav li:hover {
+    background-color: rgba(135, 206, 235, 0.75);
+    border-bottom: 4px solid #ffffff;
+}
+
+.footer {
+    font-family: Georgia, "Times New Roman", Times;
+    font-size: 14px;
+}
+
+.footer .f-nav li a {
+    line-height: 36px;
+    padding: 5px 5px;
+    margin: 0 5px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+.content {
+    margin-top: 5px;
+}
+
+.content h2 {
+    margin: 10px 0;
+    font-weight: 400;
+    color: #fadfef;
+}
+
+.content .article {
+    width: 230px;
+    height: 155px;
+    padding: 0 10px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #ce9eb2;
+    background-color: rgba(0, 0, 0, .35);
+    overflow: hidden;
+}
+
+.content .last_date {
+    clear: both;
+    text-align: right;
+}
+
+/*日历*/
+
+#cldFrame {
+    position: relative;
+    margin: 40px 0 30px 0;
+    height: 200px;
+}
+
+#top {
+    position: relative;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#topDate {
+    font-size: 18px;
+}
+
+td {
+    font-size: 15px;
+    width: 32px;
+    height: 24px;
+    text-align: center;
+}
+
+#week td {
+    color: red;
+    font-weight: 700;
+}
+
+.curDate {
+    border: solid 1px #ffffff;
+    background-color: orangered;
+    box-sizing: border-box;
+}
+
+/*author*/
+
+.content .author img {
+    width: 80px;
+}
+
+.content .author .self {
+    width: 160px;
+    margin-left: 10px;
+}
+
+.content .author .self p {
+    color: #fc755b;
+    font-size: 12px;
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+.content .c-r {
+    position: relative;
+    width: 720px;
+    padding: 10px 0;
+}
+
+.home .main {
+    position: relative;
+    height: 425px;
+}
+
+.home > span {
+    position: absolute;
+    z-index: 5;
+    height: 350px;
+    line-height: 350px;
+    margin-top: 10px;
+    font-family: "icomoon", serif;
+    font-size: 40px;
+    color: rgba(102, 102, 102, 0.52);
+    opacity: 0;
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    cursor: pointer;
+}
+
+.home span:first-of-type {
+    left: 15px;
+}
+
+.home > span:last-of-type {
+    right: 15px;
+}
+
+.home > span:hover {
+    opacity: 100%;
+}
+
+.home .main li {
+    position: absolute;
+    z-index: 0;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 800ms;
+    -webkit-transition: opacity 800ms;
+    background-color: rgba(231, 231, 231, 0.52);
+}
+
+.home .main li:first-of-type {
+    z-index: 1;
+    opacity: 100%;
+}
+
+.home .main li img {
+    width: 700px;
+    height: 350px;
+}
+
+.home .main .text {
+    color: #000000;
+    font-size: 14px;
+}
+
+.home .main .text strong {
+    display: block;
+    color: #ef7b58;
+    font-size: 16px;
+    height: 36px;
+    line-height: 48px;
+}
+
+.home .main .text p {
+    width: 700px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

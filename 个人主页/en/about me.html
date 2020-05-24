@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盛夏青空-简介</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('../fonts/icomoon.eot?z4k1te');
+            src:  url('../fonts/icomoon.eot?z4k1te#iefix') format('embedded-opentype'),
+            url('../fonts/icomoon.ttf?z4k1te') format('truetype'),
+            url('../fonts/icomoon.woff?z4k1te') format('woff'),
+            url('../fonts/icomoon.svg?z4k1te#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="../images/bg.jpg" alt="">
+        <div class="header w-m">
+            <div style="height: 18px"></div>
+            <div class="logo1">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div class="logo2">
+                <img src="../images/logo_2.png" alt="">
+            </div>
+            <div class="audio clearfix" id="myAudio">
+                <div class="last fl" title="上一曲" onclick="lastMusic()"></div>
+                <div class="palying fl" id="playing" title="播放" onclick="pauseMusic()"></div>
+                <div class="next fl" title="下一曲" onclick="nextMusic()"></div>
+            </div>
+            <div class="h-nav clearfix">
+                <ul>
+                    <li class="fr"><a href="connect%20me.html">联系我</a></li>
+                    <li class="fr"><a href="daily.html">我的日志</a></li>
+                    <li class="fr"><a href="about%20me.html">个人简介</a></li>
+                    <li class="fr"><a href="index.html">首页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content w-m clearfix">
+            <div class="c-l fl">
+                <h2>留言栏</h2>
+                <marquee scrollamount="2" scrolldelay="40" class="article"
+                         onmouseout="this.start()" onmouseover="this.stop()" direction="up">
+                    <p>不知从何时起</p>
+                    <p>我已经望着天空了</p>
+                    <p>望着这片一直泛着悲伤色彩的天空</p>
+                    <p>望着那无边无垠的蔚蓝</p>
+                    <p>想着回到了天空中的那个少女</p>
+                    <p>现在依然孤零零的那个少女</p>
+                    <p>所以我将继续踏上寻找她的旅途</p>
+                    <p>然后终有一天</p>
+                    <p>我将把她带回到这里</p>
+                    <p>为了迎接新的开始...</p>
+                </marquee>
+                <p class="last_date">——2020-5-4</p>
+                <div id="cldFrame">
+                    <div id="cldBody">
+                        <table>
+                            <thead>
+                            <tr>
+                                <td colspan="7">
+                                    <div id="top">
+                                        <span id="topDate"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="week">
+                                <td>日</td>
+                                <td>一</td>
+                                <td>二</td>
+                                <td>三</td>
+                                <td>四</td>
+                                <td>五</td>
+                                <td>六</td>
+                            </tr>
+                            </thead>
+                            <tbody id="tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="author clearfix">
+                    <h2>有关作者</h2>
+                    <div class="fl">
+                        <img src="../images/avatar.jpg" alt="">
+                    </div>
+                    <div class="self fl">
+                        <h4>黄天兵</h4>
+                        <p>一位大二学生，就读于西南石油大学，正在学习有关计算机的知识，希望成为一个IT达人</p>
+                    </div>
+                </div>
+            </div>
+            <div class="c-r demo fr">
+                <div>
+                    <h2>自我介绍</h2>
+                    <hr>
+                    <p>我是个20岁的男孩，为什么叫男孩呢。因为我的心还是很幼小的。</p>
+                    <p>我是个快就要成年的男人，为什么叫男人呢。因为我有男人所有的东西。</p>
+                    <p>哈哈。其实我自己也不是很了解自己的啦，我外表看上去永远是快乐的，内心却未必。我为很多事担心，操心，劳心，费心，甚至死心!</p>
+                    <p>我觉得一个人有了痛苦才能体会快乐的存在，只有曾经的痛苦，才有如今的快乐。</p>
+                    <p>人的一生可以分几个阶段吧：幼年，童年，少年，青年，成年，中年，老年。我正处于的是青年，是个少年与成年的桥梁。我回忆少年，因为少年给我带来的无比的快乐;我向往成年，因为成年了就能做许多自己愿意做的事，不在受任何人的阻止和约束。</p>
+                    <p>人总要学着慢慢长大，我觉得我经历的也蛮多的了。</p>
+                    <p>还有哦，我这人呢蛮相信缘分的，觉得如果有缘就一定能走到一起，我也正从系在我脚上的红线的一头觅到另一头!!</p>
+                    <p>我想要个健康平凡的，会炒番茄鸡蛋的，会操作洗衣机的，脸上可能还有点小雀斑的，见到生人会脸红的，知道酱油多少钱一瓶的，在我把大米扛回家时会帮我擦擦汗的那么一个姑娘。这样的要求，高不高?如果真的有那么一个姑娘，那么神啊，我祈求你赐我一个吧!</p>
+                    <p>说了这么多，你还是很不怎么了解我吧。哈哈。那就来认识认识我呀，我也很喜欢交朋友的啦。</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer w-m">
+            <div class="f-nav clearfix">
+                <ul>
+                    <li class="fr"><a href="connect%20me.html">联系我</a></li>
+                    <li class="fr"><a href="daily.html">我的日志</a></li>
+                    <li class="fr"><a href="about%20me.html">个人简介</a></li>
+                    <li class="fr"><a href="index.html">首页</a></li>
+                </ul>
+            </div>
+            <div class="clearfix">
+                <p class="fr">Copyright © 2020 Designed by HuangTianbing. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

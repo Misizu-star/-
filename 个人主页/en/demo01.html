@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盛夏青空-风铃</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('../fonts/icomoon.eot?z4k1te');
+            src:  url('../fonts/icomoon.eot?z4k1te#iefix') format('embedded-opentype'),
+            url('../fonts/icomoon.ttf?z4k1te') format('truetype'),
+            url('../fonts/icomoon.woff?z4k1te') format('woff'),
+            url('../fonts/icomoon.svg?z4k1te#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="../images/bg.jpg" alt="">
+        <div class="header w-m">
+            <div style="height: 18px"></div>
+            <div class="logo1">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div class="logo2">
+                <img src="../images/logo_2.png" alt="">
+            </div>
+            <div class="audio clearfix" id="myAudio">
+                <div class="last fl" title="上一曲" onclick="lastMusic()"></div>
+                <div class="palying fl" id="playing" title="播放" onclick="pauseMusic()"></div>
+                <div class="next fl" title="下一曲" onclick="nextMusic()"></div>
+            </div>
+            <div class="h-nav clearfix">
+                <ul>
+                    <li class="fr"><a href="connect%20me.html">联系我</a></li>
+                    <li class="fr"><a href="daily.html">我的日志</a></li>
+                    <li class="fr"><a href="about%20me.html">个人简介</a></li>
+                    <li class="fr"><a href="index.html">首页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content w-m clearfix">
+            <div class="c-l fl">
+                <h2>留言栏</h2>
+                <marquee scrollamount="2" scrolldelay="40" class="article"
+                         onmouseout="this.start()" onmouseover="this.stop()" direction="up">
+                    <p>不知从何时起</p>
+                    <p>我已经望着天空了</p>
+                    <p>望着这片一直泛着悲伤色彩的天空</p>
+                    <p>望着那无边无垠的蔚蓝</p>
+                    <p>想着回到了天空中的那个少女</p>
+                    <p>现在依然孤零零的那个少女</p>
+                    <p>所以我将继续踏上寻找她的旅途</p>
+                    <p>然后终有一天</p>
+                    <p>我将把她带回到这里</p>
+                    <p>为了迎接新的开始...</p>
+                </marquee>
+                <p class="last_date">——2020-5-4</p>
+                <div id="cldFrame">
+                    <div id="cldBody">
+                        <table>
+                            <thead>
+                            <tr>
+                                <td colspan="7">
+                                    <div id="top">
+                                        <span id="topDate"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="week">
+                                <td>日</td>
+                                <td>一</td>
+                                <td>二</td>
+                                <td>三</td>
+                                <td>四</td>
+                                <td>五</td>
+                                <td>六</td>
+                            </tr>
+                            </thead>
+                            <tbody id="tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="author clearfix">
+                    <h2>有关作者</h2>
+                    <div class="fl">
+                        <img src="../images/avatar.jpg" alt="">
+                    </div>
+                    <div class="self fl">
+                        <h4>黄天兵</h4>
+                        <p>一位大二学生，就读于西南石油大学，正在学习有关计算机的知识，希望成为一个IT达人</p>
+                    </div>
+                </div>
+            </div>
+            <div class="c-r demo fr">
+                <div>
+                    <h2>摇响记忆的风铃</h2>
+                    <hr>
+                    <p>
+                        “叮叮当当……”是风的声音吗？不是。这，是风铃的声音，清脆、悦耳。听，这是风铃在唱歌，你听到了吗？ 远处的风铃仍然在风中唱着动听的歌曲，这节奏，是如此的熟悉。奇怪？这不是我们青春的风铃吗？你听出来了吗？ 青春编织着诺言，青春跳跃着情感。
+                    </p>
+                    <img src="../images/li-01.jpg" alt="">
+                    <p>
+                        春雷响了，惊醒了满天的云；杜鹃啼了，唤醒了漫山的花。 青春的歌，也便从云端唱响了，从天上唱到了地下，从世界唱到了我们年轻的心中。
+                    </p>
+                    <p>
+                        把花朵交给蝴蝶去点数；把花蕊交给蜜蜂去编册；把轻风交给窗前的风铃去记忆；同时，也把烦恼交给昨天的轻风去吹散，去忘记。
+                    </p>
+                    <p>
+                        哦，是风铃响了。而我们的梦，也在这铃声中迈动了脚步。
+                    </p>
+                    <p>
+                        梦想拥有一片自由的蓝天，没有压抑，惟有一颗平静而淡泊的心；没有勾心斗角，不会感到世态的炎凉。 与风儿为伴，与云儿为友，在摆脱了世态万千的无奈之后，放宽那颗束缚已久的心，任其感受脱离了尘世悲凉后的惬意，寻找以成为本的真正生活。
+                    </p>
+                    <p>
+                        渴望一个无人的夜晚，与诗书为伴，与音乐为友，饱尝世间那最浓的情，任思绪摇响心中青春的风铃，任铃声唤醒留在沉睡中的黎明……
+                    </p>
+                    <p>
+                        渴望一片宁静的树林。和煦的阳光透过密密的丛林，在地面洒下斑驳的树影，体会那繁华背后的清淡，感受喧嚣背后的宁静，将身心融于久违的大自然的怀抱之中……
+                    </p>
+                    <p>
+                        我们青春的脚步不曾停止，青春的梦想不曾徘徊，正如那串风铃的颜色褪尽却铃声依然。曾有多少次，驻足回首幕幕往事，在每一个或喜或忧的日子里，给自己找一份快乐。始终认为，青春的季节里，我们都应放声歌唱，用真爱浇灌每一天。
+                    </p>
+                    <p>
+                        青春编织着诺言，青春跳跃着情感。让我们摇响自己心灵的风铃，让我们在“叮叮当当”的铃声中上路，去聆听，去追求，去寻找，去探索 ……
+                    </p>
+                    <p>
+                        “叮叮当当……”是风铃又在风中唱起了歌。
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer w-m">
+            <div class="f-nav clearfix">
+                <ul>
+                    <li class="fr"><a href="connect%20me.html">联系我</a></li>
+                    <li class="fr"><a href="daily.html">我的日志</a></li>
+                    <li class="fr"><a href="about%20me.html">个人简介</a></li>
+                    <li class="fr"><a href="index.html">首页</a></li>
+                </ul>
+            </div>
+            <div class="clearfix">
+                <p class="fr">Copyright © 2020 Designed by HuangTianbing. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盛夏青空-海</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('../fonts/icomoon.eot?z4k1te');
+            src:  url('../fonts/icomoon.eot?z4k1te#iefix') format('embedded-opentype'),
+            url('../fonts/icomoon.ttf?z4k1te') format('truetype'),
+            url('../fonts/icomoon.woff?z4k1te') format('woff'),
+            url('../fonts/icomoon.svg?z4k1te#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="../images/bg.jpg" alt="">
+        <div class="header w-m">
+            <div style="height: 18px"></div>
+            <div class="logo1">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div class="logo2">
+                <img src="../images/logo_2.png" alt="">
+            </div>
+            <div class="audio clearfix" id="myAudio">
+                <div class="last fl" title="上一曲" onclick="lastMusic()"></div>
+                <div class="palying fl" id="playing" title="播放" onclick="pauseMusic()"></div>
+                <div class="next fl" title="下一曲" onclick="nextMusic()"></div>
+            </div>
+            <div class="h-nav clearfix">
+                <ul>
+                    <li class="fr"><a href="connect%20me.html">联系我</a></li>
+                    <li class="fr"><a href="daily.html">我的日志</a></li>
+                    <li class="fr"><a href="about%20me.html">个人简介</a></li>
+                    <li class="fr"><a href="index.html">首页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content w-m clearfix">
+            <div class="c-l fl">
+                <h2>留言栏</h2>
+                <marquee scrollamount="2" scrolldelay="40" class="article"
+                         onmouseout="this.start()" onmouseover="this.stop()" direction="up">
+                    <p>不知从何时起</p>
+                    <p>我已经望着天空了</p>
+                    <p>望着这片一直泛着悲伤色彩的天空</p>
+                    <p>望着那无边无垠的蔚蓝</p>
+                    <p>想着回到了天空中的那个少女</p>
+                    <p>现在依然孤零零的那个少女</p>
+                    <p>所以我将继续踏上寻找她的旅途</p>
+                    <p>然后终有一天</p>
+                    <p>我将把她带回到这里</p>
+                    <p>为了迎接新的开始...</p>
+                </marquee>
+                <p class="last_date">——2020-5-4</p>
+                <div id="cldFrame">
+                    <div id="cldBody">
+                        <table>
+                            <thead>
+                            <tr>
+                                <td colspan="7">
+                                    <div id="top">
+                                        <span id="topDate"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="week">
+                                <td>日</td>
+                                <td>一</td>
+                                <td>二</td>
+                                <td>三</td>
+                                <td>四</td>
+                                <td>五</td>
+                                <td>六</td>
+                            </tr>
+                            </thead>
+                            <tbody id="tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="author clearfix">
+                    <h2>有关作者</h2>
+                    <div class="fl">
+                        <img src="../images/avatar.jpg" alt="">
+                    </div>
+                    <div class="self fl">
+                        <h4>黄天兵</h4>
+                        <p>一位大二学生，就读于西南石油大学，正在学习有关计算机的知识，希望成为一个IT达人</p>
+                    </div>
+                </div>
+            </div>
+            <div class="c-r demo special fr">
+                <div>
+                    <h2>我在大海里沉浮</h2>
+                    <hr>
+                    <p>空旷，沉寂，怆然</p>
+                    <img src="../images/li-03.jpg" alt="">
+                    <p>我跌入那一刻有着，在人海里</p>
+                    <p>挣扎的感觉</p>
+                    <p>我被海浪一次次托起，又一次次</p>
+                    <p>被海水吞噬，我尝到它</p>
+                    <p>泪水般苦涩的清咸</p>
+                    <p></p>
+                    <p>我跟随海浪上下沉浮</p>
+                    <p></p>
+                    <p>闭上双眼，每一滴泪水</p>
+                    <p>都不觉得孤单，于是我看到</p>
+                    <p>无数个浪花盛开</p>
+                    <p>无数个海鸥飞翔，每一个
+                    <p>遇到我的生命，开始与我舞蹈</p>
+                    <p>我情愿溺死在这欢乐的大海</p>
+                    <p>成为你大海里，永远的鱼</p>
+                    <p></p>
+                    <p>我体内瞬间发生巨大的，质变</p>
+                    <p>那为爱你而疼痛的肿瘤</p>
+                    <p>那被生活折磨成溃烂的双手</p>
+                    <p>以及我无血的心脏，干枯的喉咙</p>
+                    <p>一切啊！一切都浸泡在苦涩的咸水</p>
+                    <p></p>
+                    <p>那些被杀死的癌细胞，葬入海底</p>
+                    <p>我是如此洁净，那海啊</p>
+                    <p>那海与天相接，与我相连</p>
+                    <p>我在大海里沉浮，任海吻我全身</p>
+                    <p></p>
+                    <p>我像他一样包容，尘世万物</p>
+                    <p>于是，我赤裸了</p>
+                    <p>无数道海风像剑，又把我劈成</p>
+                    <p>和你一样的浪花，无处不在</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer w-m">
+            <div class="f-nav clearfix">
+                <ul>
+                    <li class="fr"><a href="connect%20me.html">联系我</a></li>
+                    <li class="fr"><a href="daily.html">我的日志</a></li>
+                    <li class="fr"><a href="about%20me.html">个人简介</a></li>
+                    <li class="fr"><a href="index.html">首页</a></li>
+                </ul>
+            </div>
+            <div class="clearfix">
+                <p class="fr">Copyright © 2020 Designed by HuangTianbing. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

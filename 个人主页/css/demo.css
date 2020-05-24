@@ -1,0 +1,46 @@
+.content .demo {
+    background-color: rgba(0, 0, 0, 0.52);
+    width: 780px;
+    margin-top: 20px;
+}
+
+.demo>div {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.demo h2 {
+    text-align: center;
+    line-height: 48px;
+}
+
+.demo hr {
+    margin-bottom: 15px;
+}
+
+.demo p {
+    color: #cccccc;
+    font-size: 15px;
+    line-height: 24px;
+    text-indent: 2em;
+    margin: 12px 0;
+}
+
+.big p {
+    height: 24px;
+    font-size: 17px;
+    text-indent: 0;
+}
+
+.demo img {
+    width: 700px;
+    margin: 10px 0;
+    opacity: 80%;
+}
+
+.special p{
+    line-height: 20px;
+    text-indent: 0;
+    margin: 6px 0;
+    height: 20px;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盛夏青空-日志</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/daily.css">
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('../fonts/icomoon.eot?z4k1te');
+            src: url('../fonts/icomoon.eot?z4k1te#iefix') format('embedded-opentype'),
+            url('../fonts/icomoon.ttf?z4k1te') format('truetype'),
+            url('../fonts/icomoon.woff?z4k1te') format('woff'),
+            url('../fonts/icomoon.svg?z4k1te#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="../images/bg.jpg" alt="">
+        <div class="header w-m">
+            <div style="height: 18px"></div>
+            <div class="logo1">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div class="logo2">
+                <img src="../images/logo_2.png" alt="">
+            </div>
+            <div class="audio clearfix" id="myAudio">
+                <div class="last fl" title="上一曲" onclick="lastMusic()"></div>
+                <div class="palying fl" id="playing" title="播放" onclick="pauseMusic()"></div>
+                <div class="next fl" title="下一曲" onclick="nextMusic()"></div>
+            </div>
+            <div class="h-nav clearfix">
+                <ul>
+                    <li class="fr"><a href="connect%20me.html">联系我</a></li>
+                    <li class="fr"><a href="daily.html">我的日志</a></li>
+                    <li class="fr"><a href="about%20me.html">个人简介</a></li>
+                    <li class="fr"><a href="index.html">首页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content w-m clearfix">
+            <div class="c-l fl">
+                <h2>留言栏</h2>
+                <marquee scrollamount="2" scrolldelay="40" class="article"
+                         onmouseout="this.start()" onmouseover="this.stop()" direction="up">
+                    <p>不知从何时起</p>
+                    <p>我已经望着天空了</p>
+                    <p>望着这片一直泛着悲伤色彩的天空</p>
+                    <p>望着那无边无垠的蔚蓝</p>
+                    <p>想着回到了天空中的那个少女</p>
+                    <p>现在依然孤零零的那个少女</p>
+                    <p>所以我将继续踏上寻找她的旅途</p>
+                    <p>然后终有一天</p>
+                    <p>我将把她带回到这里</p>
+                    <p>为了迎接新的开始...</p>
+                </marquee>
+                <p class="last_date">——2020-5-4</p>
+                <div id="cldFrame">
+                    <div id="cldBody">
+                        <table>
+                            <thead>
+                            <tr>
+                                <td colspan="7">
+                                    <div id="top">
+                                        <span id="topDate"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="week">
+                                <td>日</td>
+                                <td>一</td>
+                                <td>二</td>
+                                <td>三</td>
+                                <td>四</td>
+                                <td>五</td>
+                                <td>六</td>
+                            </tr>
+                            </thead>
+                            <tbody id="tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="author clearfix">
+                    <h2>有关作者</h2>
+                    <div class="fl">
+                        <img src="../images/avatar.jpg" alt="">
+                    </div>
+                    <div class="self fl">
+                        <h4>黄天兵</h4>
+                        <p>一位大二学生，就读于西南石油大学，正在学习有关计算机的知识，希望成为一个IT达人</p>
+                    </div>
+                </div>
+            </div>
+            <div class="c-r daily fr">
+                <h2>我的日志</h2>
+                <hr>
+                <div>
+                    <div class="touXiang">
+                        <img class="fl" src="../images/touxiang.jpg" alt="">
+                        <p>望</p>
+                        <span>2020年2月21日 14:51</span>
+                    </div>
+                    <div class="zhengwen">
+                        <p>在天空中，从很小的时候就觉得……只是总觉得另一个我在那里，那样很罗曼蒂克吧。真正的自己在天上，一定很舒服吧。向下俯视地上的事物，全部都可以看得清清楚楚，心里一定可以感到很温暖吧。</p>
+                        <a href="../images/daily01.jpg" target="_blank"><img src="../images/daily01.jpg" alt=""></a>
+                        <a href="../images/daily02.jpg" target="_blank"><img src="../images/daily02.jpg" alt=""></a>
+                        <a href="../images/daily03.jpg" target="_blank"><img src="../images/daily03.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="touXiang">
+                        <img class="fl" src="../images/touxiang.jpg" alt="">
+                        <p>望</p>
+                        <span>2019年11月5日 22:22</span>
+                    </div>
+                    <div class="zhengwen noIndent">
+                        <p>无法用言语传达的情感</p>
+                        <p>透过歌声却可以如此的强烈</p>
+                        <p>带着那份夏天の思念</p>
+                        <p>带着那段秋天の回忆</p>
+                        <p>带着那时冬天の约定</p>
+                        <p>喜悦与忧伤相互交织的旅程——</p>
+                        <p>如同化作静候春天的花蕾</p>
+                        <p>无论前方的未来究竟会是怎样的景色</p>
+                        <p>无论明日的天空又将是多么的辽远</p>
+                        <p>终有一天都会迎着『春风</p>
+                        <p>再一次绽放出她们应有的光芒~</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="touXiang">
+                        <img class="fl" src="../images/touxiang.jpg" alt="">
+                        <p>望</p>
+                        <span>2018年7月3日 19:00</span>
+                    </div>
+                    <div class="zhengwen noIndent">
+                        <p>和你们一起相处的时光</p>
+                        <p>虽然有挫折和挫败</p>
+                        <p>但是沉淀下来的</p>
+                        <p>都是美好的点滴</p>
+                        <a href="../images/daily04.jpg" target="_blank">
+                            <img class="one-pic" src="../images/daily04.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="touXiang">
+                        <img class="fl" src="../images/touxiang.jpg" alt="">
+                        <p>望</p>
+                        <span>2018年2月4日 12:25</span>
+                    </div>
+                    <div class="zhengwen">
+                        <p>"如果我不曾感受温暖，我又怎么觉得孤独"，这句话用在阿修罗身上，才是真正的诠释。</p>
+                        <p>"我不知道我该为那些可怜又愚蠢的人类哭泣，为那个美好得像天使一样的若狭哭泣，还是那个生而为人，成为恶魔，再被感化为人，最终经历无数次生死离别后入佛为安的阿修罗。"</p>
+                        <p>"是谁告诉我们人之初，性本善。可我看到的人性，却都是自私，恶劣，无知，愚蠢的样子。"</p>
+                        <p>"我曾存在地狱，化为恶魔，却在这人世间看破了红尘。"</p>
+                        <p style="text-align: right">——阿修罗</p>
+                    </div>
+                </div>
+                <div style="text-align: center">......</div>
+            </div>
+        </div>
+        <div class="footer w-m">
+            <div class="f-nav clearfix">
+                <ul>
+                    <li class="fr"><a href="connect%20me.html">联系我</a></li>
+                    <li class="fr"><a href="daily.html">我的日志</a></li>
+                    <li class="fr"><a href="about%20me.html">个人简介</a></li>
+                    <li class="fr"><a href="index.html">首页</a></li>
+                </ul>
+            </div>
+            <div class="clearfix">
+                <p class="fr">Copyright © 2020 Designed by HuangTianbing. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
